@@ -19,8 +19,8 @@ export function createValueSection(valueSection) {
     valueSection.content.forEach(element => {
         valueHTML += `
         <div class="grid-item">
-            <span class="material-icons icon-valeur">${element.icon}</span>
-            <p class="text-valeur">${element.title}</p>
+            <span class="material-icons icon-value">${element.icon}</span>
+            <p class="text-value">${element.title}</p>
         </div>
         `
     });
@@ -28,14 +28,14 @@ export function createValueSection(valueSection) {
   
     const sectionHTML =`
     <div class="main-container">
-        <div class="divider" id="service">
+        <div class="divider" id="value">
             <h2>${valueSection.title}</h2>
         </div>
         <div class="text-container">
             <p>${valueSection.description}</p>
         </div>
 
-        <div class="liste-valeur border-bottom-animation">
+        <div class="value-container border-bottom-animation">
           ${valueHTML}
         </div>
     </div>

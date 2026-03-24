@@ -36,7 +36,7 @@ export function createServiceSection(serviceSection) {
             <p>${serviceSection.description}</p>
         </div>
 
-        <div class="project-type-container">${serviceHTML}</div>
+        <div class="service-container">${serviceHTML}</div>
         
         <button type="button" class="contact-button">
             <a href="mailto:info@bendroz.ch" class="smooth-scroll">Contactez-nous</a>

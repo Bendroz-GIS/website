@@ -1,5 +1,11 @@
 
-/* Général */
+/*
+----------------
+----------------
+Général
+----------------
+----------------
+*/
 
 :root {
     --neutral-color-1: rgb(38, 38, 38);
@@ -66,7 +72,13 @@ body {
     align-items: center;
 }
 
-/* TOP BAR */
+/*
+----------------
+----------------
+TOP BAR
+----------------
+----------------
+*/
 
 header {  
     width: 100%;
@@ -109,7 +121,13 @@ button.contact-button {
     align-self: center;
 }
 
-/* NAV BUTTON */
+/*
+----------------
+----------------
+NAV BUTTON
+----------------
+----------------
+*/
 
 button.nav-toggle-button span {
     color: var(--main-color);
@@ -263,12 +281,12 @@ TEXT CONTAINER
 /*
 ----------------
 ----------------
-FIRST CONTAINER
+HERO CONTAINER
 ----------------
 ----------------
 */
 
-.first-container {
+.hero-container {
     height: 100vh;
     position: relative;
     background-image: linear-gradient(to bottom, rgba(232, 69, 69, 0.5), 20%, rgba(255, 255, 255, 0.9)), url("../images/layout.jpg");
@@ -284,7 +302,7 @@ FIRST CONTAINER
 
 }
 
-.first-container img {
+.hero-container img {
     display: none;
     height: 100vh;
     width: 100vh;
@@ -293,7 +311,7 @@ FIRST CONTAINER
     /*filter: blur(.8px) grayscale();*/
 }
 
-.first-text-container {
+.hero-text-container {
     position: absolute;
     bottom: 10%;
     left: 0;
@@ -305,7 +323,7 @@ FIRST CONTAINER
     gap: 50px; 
 }
 
-.first-container h1 {
+.hero-container h1 {
     color: var(--neutral-color-1);
     font-weight: 800;
     margin: 0;
@@ -313,26 +331,26 @@ FIRST CONTAINER
     letter-spacing: 0px; 
 }
 
-.first-container .list {
+.hero-container .list {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.first-container .list div {
+.hero-container .list div {
     display: flex;
     align-items: center;
     
     
 }
 
-.first-container .list .bullet {
+.hero-container .list .bullet {
     font-size: 10px;
     padding-right: 10px;
     color: var(--main-color);
 }
 
-.first-container .list .text {
+.hero-container .list .text {
     align-self: center;
     font-size: 20px;
     color: var(--neutral-color-1);
@@ -340,11 +358,10 @@ FIRST CONTAINER
     
 }
 
-.first-container button {
+.hero-container button {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 /*
 ----------------
@@ -354,13 +371,13 @@ SERVICE
 ----------------
 */
 
-div.project-type-container {
+div.service-container {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-div.project-type-container h3 {
+div.service-container h3 {
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -369,22 +386,17 @@ div.service-container button {
     display: block;
 }
 
-
-
-
-
-
 /*
 ----------------
 ----------------
-EXPERTISE
+SKILL
 ----------------
 ----------------
 */
 
 
 
-div.liste-expertise {
+div.skill-container {
     display: grid;
     grid-template-columns: auto;
     gap: 24px;
@@ -393,7 +405,7 @@ div.liste-expertise {
     text-align: center;
 }
 
-div.liste-expertise .grid-item {
+div.skill-container .grid-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -407,27 +419,17 @@ div.liste-expertise .grid-item {
     border-radius: 24px;
 }
 
-img.expertise {
+img.skill {
     min-width: 80px;
     width: 45%;
     max-width: 110px;
     margin: 12px;
 }
 
-p.text-expertise {
+p.text-skill {
     margin: 12px;
     text-transform: uppercase;
 }
-
-/*
-----------------
-----------------
-BORDER BOTTOM ANIMATION
-----------------
-----------------
-*/
-
-
 
 /*
 ----------------
@@ -437,9 +439,7 @@ VALEUR
 ----------------
 */
 
-
-
-div.liste-valeur {
+div.value-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -449,7 +449,7 @@ div.liste-valeur {
 
 }
 
-div.liste-valeur {
+div.value-container {
     display: flex;
     justify-content: center;
     grid-template-columns: 33% 33% 33%;
@@ -457,37 +457,20 @@ div.liste-valeur {
 }
 
 
-/*
-div.liste-valeur {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: auto auto auto;
-    grid-row-gap: 24px;
-}
-    
-
-div.text-container.dark p {
-    color: var(--neutral-color-2);
-    font-weight: 300;
-}
-*/
-
-.liste-valeur .grid-item {
+.value-container .grid-item {
     display: flex;
     align-items: center;
-
     padding: 8px;
     gap: 12px;
-
     border: 1px var(--neutral-color-1-shade-1) solid;
 }
 
-p.text-valeur {
+p.text-value {
     text-transform: uppercase;
     margin: 0;
 }
 
-span.icon-valeur {
+span.icon-value {
     color: var(--main-color);
     font-size: 24px;
 }
@@ -500,7 +483,7 @@ COLLABORATEUR
 ----------------
 */
 
-div.liste-collaborateur {
+div.team-container {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
@@ -510,14 +493,14 @@ div.liste-collaborateur {
     column-gap: 24px;
 }
 
-.liste-collaborateur .grid-item {
+.team-container .grid-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 1px var(--neutral-color-1-shade-1) solid;
 }
 
-.liste-collaborateur .info-container {
+.team-container .info-container {
     gap: 5px;
     padding: 8px;
     width: 70%;
@@ -526,12 +509,12 @@ div.liste-collaborateur {
     align-items: center;
 }
 
-i.icon-collaborateur {
+i.icon-team {
     color: var(--main-color);
     font-size: 22px;
 }
 
-img.image-collaborateur {
+img.image-team {
     display: block;
     margin: 12px;
     border-radius: 50%;
@@ -540,84 +523,6 @@ img.image-collaborateur {
     width: 80%;
     max-width: 190px;
 }
-
-
-/*
-----------------
-----------------
-CONTACT
-----------------
-----------------
-*/
-
-/*
-.contact-button {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-
-    padding: 12px 24px;
-    border-radius: 4px;
-    border: 1px solid var(--neutral-color-1);
-
-    font-size: 19px;
-    color: var(--neutral-color-1);
-
-    cursor: pointer;
-    z-index: 1;
-    transition: all 0.2s ease-in;
-    position: relative;
-    overflow: hidden;
-
-}
-  
-.contact-button:before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%) scaleY(1) scaleX(1.25);
-    top: 100%;
-    width: 140%;
-    height: 180%;
-    background-color: rgba(0, 0, 0, 0.05);
-    border-radius: 50%;
-    display: block;
-    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-    z-index: -1;
-}
-  
-.contact-button:after {
-    content: "";
-    position: absolute;
-    left: 55%;
-    transform: translateX(-50%) scaleY(1) scaleX(1.45);
-    top: 180%;
-    width: 160%;
-    height: 190%;
-    background-color: var(--main-color);
-    border-radius: 50%;
-    display: block;
-    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-    z-index: -1;
-}
-  
-.contact-button:hover {
-    color: var(--neutral-color-2);
-    border: 1px solid var(--main-color);
-}
-  
-.contact-button:hover:before {
-    top: -35%;
-    background-color: var(--main-color);
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-}
-  
-.contact-button:hover:after {
-    top: -45%;
-    background-color: var(--main-color);
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-}
-*/
 
 
 /*
@@ -673,22 +578,36 @@ footer img {
         font-size: 20px;
     }
 
+    /*
+    ----------------
+    ----------------
+    VALUE
+    ----------------
+    ----------------
+    */
 
-    div.liste-valeur .grid-item {
+
+    div.value-container .grid-item {
         padding: 18px;
     }
-
-    div.project-type-container .text-container {
-        box-shadow: -5px 0px 0px 0px var(--main-color)
-    }
-
-    div.liste-valeur {
+    div.value-container {
         display: grid;
         justify-content: center;
         grid-template-columns: auto auto auto;
         grid-row-gap: 24px;
     }
 
+    /*
+    ----------------
+    ----------------
+    SERVICE
+    ----------------
+    ----------------
+    */
+
+    div.service-container .text-container {
+        box-shadow: -5px 0px 0px 0px var(--main-color)
+    }
 }
 
 
@@ -699,11 +618,27 @@ footer img {
         gap: 75px;
     }
 
-    div.project-type-container {
+    /*
+    ----------------
+    ----------------
+    SERVICE
+    ----------------
+    ----------------
+    */
+
+    div.service-container {
         gap: 50px;
     }
 
-    div.liste-expertise {
+    /*
+    ----------------
+    ----------------
+    SKILL
+    ----------------
+    ----------------
+    */
+
+    div.skill-container {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
@@ -714,36 +649,12 @@ footer img {
     /*
     ----------------
     ----------------
-    TOP BAR AND NAV PANE
+    HERO
     ----------------
     ----------------
     */
 
-    /*
-    .first-container {
-        height: 100vh;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        align-items: center;
-        background:none;
-    }
-
-    .first-container img {
-        display: block;
-        width: 100%;
-        object-fit: cover;
-    }
-
-    .first-text-container {
-        text-align: center;
-        align-items: center;
-        position: unset;
-        gap: 100px;
-        
-    }
-    */
-
-    .first-container {
+    .hero-container {
         height: 100vh;
         align-items: center;
         display: grid;
@@ -751,14 +662,14 @@ footer img {
         position: relative;
     }
 
-    .first-container img {
+    .hero-container img {
         position: absolute;
         display: none;
         width: 100%;
         object-fit: cover;
     }
 
-    .first-container .img-background {
+    .hero-container .img-background {
         position: absolute;
         height: 100%;
         width: 100%;
@@ -766,7 +677,7 @@ footer img {
         background-image: linear-gradient(to left, rgba(232, 69, 69, 0.5), 20%, rgba(255, 255, 255, 0.9)), url("../images/layout.jpg");
     }
 
-    .first-text-container {
+    .hero-text-container {
         z-index: 1;
         position: unset;
         text-align: center;
@@ -777,11 +688,15 @@ footer img {
         bottom: 0;
         justify-content: center;
     }
-    
-    
-    
 
-
+    /*
+    ----------------
+    ----------------
+    TOP BAR & NAV PANE
+    ----------------
+    ----------------
+    */
+    
     #top-bar-container { 
         padding: 20px 24px;
         width: unset;
@@ -839,18 +754,7 @@ footer img {
     .nav-pane-container .button-container {
         width: unset;
     }
-
-    
-
-
-    /*
-    ----------------
-    ----------------
-    SERVICE
-    ----------------
-    ----------------
-    */  
-    
+   
     
 }
 

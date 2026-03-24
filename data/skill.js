@@ -30,8 +30,8 @@ export function createSkillSection(skillSection) {
     skillSection.content.forEach(element => {
         skillHTML += `
         <div class="grid-item">
-            <img class="expertise" src="${element.image}" alt="">
-            <p class="text-expertise">${element.title}</p>
+            <img class="skill" src="${element.image}" alt="">
+            <p class="text-skill">${element.title}</p>
         </div>
         `
     });
@@ -39,14 +39,14 @@ export function createSkillSection(skillSection) {
   
     const sectionHTML =`
     <div class="main-container">
-        <div class="divider" id="service">
+        <div class="divider" id="skill">
             <h2>${skillSection.title}</h2>
         </div>
         <div class="text-container">
             <p>${skillSection.description}</p>
         </div>
 
-        <div class="liste-expertise border-bottom-animation">
+        <div class="skill-container border-bottom-animation">
           ${skillHTML}
         </div>
     </div>

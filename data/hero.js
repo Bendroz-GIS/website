@@ -24,8 +24,8 @@ export function createHeroSection(heroSection) {
 
   
     const sectionHTML =`
-    <div id="first" class="first-container">
-        <div class="first-text-container">
+    <div id="hero" class="hero-container">
+        <div class="hero-text-container">
 
             <h1>${heroSection.title}</h1>
 
