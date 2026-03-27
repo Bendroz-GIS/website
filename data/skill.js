@@ -1,5 +1,5 @@
 export const skillSection = {
-    title: "Notre équipe",
+    title: "Notre expertise",
     description: "Notre expertise en géoinformatique et ses domaines sous-jacent nous permet de vous offrir des solutions et des services personnalisés efficaces pour répondre à vos besoin.",
     content : [{
         title: "Analyse",
