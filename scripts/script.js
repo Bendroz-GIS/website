@@ -1,40 +1,56 @@
+import { contactSection, createContactSection } from "../data/contact.js?v=";
+import { heroSection, createHeroSection } from "../data/hero.js?v=3";
+import { serviceSection, createServiceSection } from "../data/service.js?v=1";
+import { skillSection, createSkillSection } from "../data/skill.js?v=1";
+import { teamSection, createTeamSection } from "../data/team.js?v=2";
+import { valueSection, createValueSection } from "../data/value.js?v=1";
+import { navigationInfo, createNavigationInfo } from "../data/navigation.js?v=3";
+
+
+createNavigationInfo(navigationInfo);
+createContactSection(contactSection);
+createHeroSection(heroSection);
+createServiceSection(serviceSection);
+createSkillSection(skillSection);
+createTeamSection(teamSection);
+createValueSection(valueSection);
+
+
 
 document.addEventListener('DOMContentLoaded', function() { // permet de s'assurer le bon chargement du contenu
-	const VARIABLE_NAME = document.getElementsByClassName("nav-toggle-button"); // élément qui vont trigger la fonction
-	for (let i = 0; i < VARIABLE_NAME.length; i++) {
-		VARIABLE_NAME[i].addEventListener("click", function(e) {
-			document.getElementById("nav-pane").classList.toggle("open"); // élément cible // classe à basculer
-		});
-	}
+    
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('nav-links');
+    burger.addEventListener('click', () => {
+        const expanded = burger.getAttribute('aria-expanded') === 'true';
+        burger.setAttribute('aria-expanded', String(!expanded));
+
+        if (expanded) {
+            navLinks.classList.add('closing'); // ← lance le fadeOut
+        } else {
+            navLinks.classList.remove('closing');
+            navLinks.classList.add('open');
+        }
+    });
+
+    navLinks.addEventListener('animationend', () => {
+        if (navLinks.classList.contains('closing')) {
+            navLinks.classList.remove('open');
+            navLinks.classList.remove('closing');
+        }
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            burger.setAttribute('aria-expanded', 'false');
+            navLinks.classList.add('closing');
+        });
+    });
+
+    window.addEventListener('resize', () => {
+    if (window.innerWidth >= 650) {
+        burger.setAttribute('aria-expanded', 'false');
+        navLinks.classList.remove('open');
+    }
+    });
 });
-
-/*
-window.onscroll = function() { scrollFunction() };
-
-function scrollFunction() {
-  const scrollPosition = document.body.scrollTop || document.documentElement.scrollTop;
-
-  // Récupération de l'élément avec l'ID "my-div"
-  const div = document.getElementById("first");
-  
-  const logo = document.getElementById("top-nav-logo");
-
-  // Récupération de l'élément "top-bar"
-  const topBar = document.getElementById("top-bar-container");
-
-  // Vérification si le bas de la div est au-dessus du haut de la fenêtre
-  const divBottom = div.getBoundingClientRect().bottom;
-
-  if (divBottom < 0) {
-    // Basculer vers la classe dark-theme
-    topBar.classList.remove('unscrolled');
-    topBar.classList.add('scrolled');
-	  logo.src = "images/logo-rb_v-vecteur.svg";
-  } else {
-    // Basculer vers la classe light-theme
-    topBar.classList.remove('scrolled');
-    topBar.classList.add('unscrolled');
-	  logo.src = "images/logo-rw_v-vecteur.svg"
-  }
-}
-*/

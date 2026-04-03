@@ -1,27 +1,34 @@
 export const skillSection = {
-    title: "Notre expertise",
+    title: "Nos expertises",
     description: "Notre expertise en géoinformatique et ses domaines sous-jacent nous permet de vous offrir des solutions et des services personnalisés efficaces pour répondre à vos besoin.",
     content : [{
-        title: "Analyse",
-        image: "../images/p-analyse-spatiale.svg"
+        title: "01 - Analyse",
+        description: "Requêtes spatiales, statistiques et croisement complexe pour vos géodonnées",
+        image: "./images/p-analyse-spatiale.svg"
     },{
-        title: "Cartographie",
-        image: "../images/p-cartographie.svg"
+        title: "02 - Cartographie",
+        description: "Conception de cartes claires, précises et adaptées à chaque besoin.",
+        image: "./images/p-cartographie.svg"
     },{
-        title: "Modélisation",
-        image: "../images/p-modelisation.svg"
+        title: "03 - Modélisation",
+        description: "Conception de schémas de géodonnées et modélisation de processus.",
+        image: "./images/p-modelisation.svg"
     },{
-        title: "Télédétection",
-        image: "../images/p-teledetection.svg"
+        title: "04 - Télédétection",
+        description: "Traitement d'orthophotos, MNT et imagerie multispectrale pour l'extraction d'information.",
+        image: "./images/p-teledetection.svg"
     },{
-        title: "Web SIG",
-        image: "../images/p-web-sig.svg"
+        title: "05 - Web SIG",
+        description: "Déploiement de services géospatiaux et d'applications cartographiques interactives en ligne.",
+        image: "./images/p-web-sig.svg"
     },{
-        title: "Intégration",
-        image: "../images/p-integration.svg"
+        title: "06 - Intégration",
+        description: "ETL géospatial, migration de données et interopérabilité entre systèmes et formats SIG.",
+        image: "./images/p-integration.svg"
     },{
-        title: "Formation",
-        image: "../images/p-formation.svg"
+        title: "07 - Formation",
+        description: "Accompagnement technique sur ArcGIS, QGIS, FME et les standards géomatiques.",
+        image: "./images/p-formation.svg"
     }]
 }
 
@@ -31,7 +38,10 @@ export function createSkillSection(skillSection) {
         skillHTML += `
         <div class="grid-item">
             <img class="skill" src="${element.image}" alt="">
-            <p class="text-skill">${element.title}</p>
+            <div class="text-container">
+                <h3 class="text-skill">${element.title}</h3>
+                <p>${element.description}</p>
+            </div>
         </div>
         `
     });

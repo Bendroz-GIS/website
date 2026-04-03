@@ -15,7 +15,7 @@ export function createHeroSection(heroSection) {
     let heroHTML = "" 
     heroSection.content.forEach(element => {
         heroHTML += `
-        <div>
+        <div class="list-item">
             <span class="material-icons icon-valeur bullet">circle</span>
             <span class="text">${element.pro}</span>
         </div>
@@ -24,19 +24,16 @@ export function createHeroSection(heroSection) {
 
   
     const sectionHTML =`
-    <div id="hero" class="hero-container">
+    <div class="main-container">
         <div class="hero-text-container">
-
             <h1>${heroSection.title}</h1>
-
             <div class="list">${heroHTML}</div>
-
             <button type="button" class="contact-button">
                 <a href="mailto:info@bendroz.ch" class="smooth-scroll">Contactez-nous</a>
             </button>
-         
-    </div>
-    <div class="img-background"></div>
+        </div> 
+    </div>   
+    
     `
 
 
