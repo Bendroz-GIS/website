@@ -15,12 +15,10 @@ export function createContactSection(contactSection) {
   
     const sectionHTML =`
     <div class="main-container">
-        <div class="divider" id="contact">
+        <div class="section-header">
             <h2>${contactSection.title}</h2>
-        </div>
-        <div class="text-container">
             ${contactHTML}
-        </div>
+        </div>     
         <button type="button" class="contact-button">
             <a href="mailto:info@bendroz.ch" class="smooth-scroll">Contactez-nous</a>
         </button>

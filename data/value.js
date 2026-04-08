@@ -38,11 +38,9 @@ export function createValueSection(valueSection) {
   
     const sectionHTML =`
     <div class="main-container">
-        <div class="divider" id="value">
-            <h2>${valueSection.title}</h2>
-        </div>
-        <div class="text-container">
-            <p>${valueSection.description}</p>
+        <div class="section-header">
+            <h2 class="section-title">${valueSection.title}</h2>
+            <p class="section-description">${valueSection.description}</p>
         </div>
 
         <div class="value-container border-bottom-animation">

@@ -36,9 +36,9 @@ export function createTeamSection(teamSection) {
   
     const sectionHTML =`
     <div class="main-container">
-        <div class="divider" id="service">
+        <div class="section-header">
             <h2>${teamSection.title}</h2>
-        </div>
+        </div>        
         <div class="team-container border-animation">
           ${teamHTML}
         </div>

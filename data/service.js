@@ -1,6 +1,6 @@
 export const serviceSection = {
     title: "Nos services",
-    description: "Chez Bendroz, nous mettons notre expertise en géoinformatique au service de vos projets. Que vous ayez besoin de solutions cartographiques personnalisées, de gestion de données géographiques ou d'analyses spatiales avancées, nous vous accompagnons à chaque étape. Grâce à notre approche technique et notre savoir-faire, nous vous aidons à exploiter pleinement la puissance des géodonnées, afin de répondre à vos besoins spécifiques et d’optimiser vos processus.",
+    description: "Chez bendroz, nous mettons notre expertise au service de vos projets. Nous vous aidons à exploiter pleinement la puissance des géodonnées, afin de répondre à vos besoins spécifiques et d’optimiser vos processus.",
     content : [{
         title: "Création cartographique",
         description: "Vous avez besoin d'une carte personnalisée pour un événement, un projet, ou pour des travaux spécifiques ? Nous vous proposons des solutions cartographiques sur mesure, adaptées à vos besoins. Quel que soit l'usage, nous concevons des cartes précises et esthétiques, optimisées pour la visualisation, la planification et la prise de décision."
@@ -29,11 +29,9 @@ export function createServiceSection(serviceSection) {
   
     const sectionHTML =`
     <div class="main-container">
-        <div class="divider" id="service">
-            <h2>${serviceSection.title}</h2>
-        </div>
-        <div class="text-container">
-            <p>${serviceSection.description}</p>
+        <div class="section-header">
+            <h2 class="section-title">${serviceSection.title}</h2>
+            <p class="section-description">${serviceSection.description}</p>
         </div>
 
         <div class="service-container">${serviceHTML}</div>
