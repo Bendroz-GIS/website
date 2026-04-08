@@ -1,10 +1,10 @@
-import { contactSection, createContactSection } from "../data/contact.js?v=";
-import { heroSection, createHeroSection } from "../data/hero.js?v=3";
-import { serviceSection, createServiceSection } from "../data/service.js?v=1";
-import { skillSection, createSkillSection } from "../data/skill.js?v=1";
-import { teamSection, createTeamSection } from "../data/team.js?v=2";
-import { valueSection, createValueSection } from "../data/value.js?v=1";
-import { navigationInfo, createNavigationInfo } from "../data/navigation.js?v=3";
+import { contactSection, createContactSection } from "../data/contact.js?v=2";
+import { heroSection, createHeroSection } from "../data/hero.js?v=2";
+import { serviceSection, createServiceSection } from "../data/service.js?v=2";
+import { skillSection, createSkillSection } from "../data/skill.js?v=2";
+import { teamSection, createTeamSection } from "../data/team.js?v=3";
+import { valueSection, createValueSection } from "../data/value.js?v=2";
+import { navigationInfo, createNavigationInfo } from "../data/navigation.js?v=2";
 
 
 createNavigationInfo(navigationInfo);
