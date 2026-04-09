@@ -575,7 +575,7 @@ footer .footer-logo {
 @media screen and (min-width: 650px) {
 
     h1 {
-        font-size: 4rem;
+        font-size: 3.15rem;
     }
 
     h2 {
@@ -583,11 +583,11 @@ footer .footer-logo {
     }
 
     h3, span.icon-value {
-        font-size: 1.75rem;
+        font-size: 1.45rem;
     }
 
     p, span, .contact-button a {
-        font-size: 1.3rem;
+        font-size: 1.25rem;
     }
 
 
@@ -651,15 +651,15 @@ footer .footer-logo {
 @media screen and (min-width: 1000px) {
 
     h1 {
-        font-size: 6rem;
-    }
-
-    h2 {
         font-size: 4rem;
     }
 
+    h2 {
+        font-size: 3rem;
+    }
+
     h3, span.icon-value {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     p, span, .contact-button a {
