@@ -600,10 +600,7 @@ footer .footer-logo {
     .section-header {
         padding-bottom: 2rem ;
     }
-
-    .contact-button a {
-        padding: 0.9rem 1.5rem;
-    }
+    
 
     /* SKILL */
 
@@ -668,11 +665,7 @@ footer .footer-logo {
     p, span, .contact-button a {
         font-size: 1.3rem;
     }
-  
 
-    .contact-button a {
-        padding: 1rem 1.6rem;
-    }
 
     #hero-section {
         justify-content: center;
