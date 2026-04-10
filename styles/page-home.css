@@ -1,0 +1,426 @@
+@import url("base.css");
+@import url("./component/header.css");
+@import url("./component/footer.css");
+@import url("./component/button.css");
+
+
+/*
+----------------
+----------------
+HERO
+----------------
+----------------
+*/
+
+#hero-section {
+    height: calc(100vh - var(--header-height));
+    position: relative;
+}
+
+
+#hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("../images/layout.webp");
+    background-size: cover;
+    background-position: 30%;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+#hero-section .main-container {
+    position: absolute;
+    bottom: 10vh;
+    z-index: 1;
+}
+
+#hero-section .hero-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+#hero-section span.bullet,span.text {
+    color: var(--black);
+}
+
+#hero-section span.bullet {
+    font-size: 0.7rem;
+}
+
+#hero-section .list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+#hero-section .list-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+
+/*
+----------------
+----------------
+SKILL
+----------------
+----------------
+*/
+
+#skill-section .main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#skill-section .skill-container {
+    display: grid;
+    gap: 2rem;
+    margin: 3rem auto;
+}
+
+div.skill-container .grid-item {
+    display: flex;
+    align-items: center;
+
+    outline: 2px solid var(--white-shade-2);
+    padding: 1.5rem;
+    transition: background-color 0.3s;
+    
+}
+
+div.skill-container .grid-item:hover {
+    outline: 3px solid var(--black-shade-1);    
+    background-color: var(--white-shade-1);
+    cursor: default;
+}
+
+#skill-section .text-skill {
+    margin: 0.7rem 0.7rem  0.7rem 0;
+}
+
+img.skill {
+    width: 40%;
+    display: none;
+}
+
+/*
+----------------
+----------------
+SERVICE
+----------------
+----------------
+*/
+
+#service-section {
+    color: var(--white-shade-1);
+    background-color: var(--black);
+}
+
+
+#service-section .contact-button a {
+    color: var(--black);
+    background-color: var(--white-shade-1);
+    border-color: var(--white-shade-1);
+}
+
+#service-section .contact-button a:hover {
+    color: var(--white-shade-1);
+    background-color: var(--black);
+}
+
+
+#service-section .text-container.bati h3 {
+    color: var(--color-bati);
+}
+
+
+#service-section .service.button.bati {
+    border-color: var(--color-bati);
+    background-color: var(--color-bati);
+    color: var(--black);
+}
+
+#service-section .service.button:hover {
+    background-color: var(--black);  
+}
+
+#service-section .service.button.bati:hover {
+    color: var(--color-bati);  
+}
+
+
+
+
+/*
+----------------
+----------------
+VALUE
+----------------
+----------------
+*/
+
+#value-section {
+    color: var(--white-shade-1);
+    background-color: var(--black);    
+}
+
+
+#value-section .value-container {
+    display: grid;
+
+    gap: 1px;
+    background-color: var(--black-shade-2);
+    border: 1px solid var(--black-shade-2);
+
+    width: fit-content;
+    margin: 3rem auto;
+}   
+
+
+#value-section .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1.5rem 3rem;
+
+    background-color: var(--black);
+}
+
+#value-section .title {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    gap: 1.5rem;
+}
+
+#value-section .text-value {
+    margin: 0.7rem 0.7rem  0.7rem 0;
+}
+
+
+/*
+----------------
+----------------
+TEAM
+----------------
+----------------
+*/
+
+#team-section {
+    position: relative;
+}
+
+#team-section::before {
+    content: "";
+    z-index: -1;
+    opacity: 0.25;
+    position: absolute;
+    opacity: 0.6;
+    background-image:  radial-gradient(var(--white-shade-1) 0.75px, transparent 0.75px), radial-gradient(var(--white-shade-1) 0.75px, rgba(229,229,247,0) 0.75px);
+    background-size: 30px 30px;
+    background-position: 0 0,45px 45px;
+    inset: 0;
+}
+
+
+
+
+#team-section .team-container {
+    display: grid;
+    gap: 2rem;
+    width: 100%;
+}
+
+#team-section .grid-item {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+
+    height: 9.4rem;
+    width: 100%;
+    max-width: 24rem;
+
+    background-color: var(--white);
+    border: 1px solid var(--white-shade-1);
+}
+
+
+#team-section .info-container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.3rem;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+
+#team-section .icon-team {
+    color: var(--main-color);
+    font-size: 1.4rem;
+}
+
+#team-section .image-team {
+    display: block;
+    height: 100%;
+}
+
+#team-section .team-name {
+    margin: 0;
+}
+
+#team-section .linkedin-container {
+    display: flex;
+    width: fit-content;
+    color: var(--black);
+}
+
+#team-section .linkedin-icon {
+    height: 1.6rem;
+    color: var(--white-shade-3);
+}
+
+#team-section .linkedin-icon:hover {
+    color: var(--black);
+}
+
+/*
+----------------
+----------------
+CONTACT
+----------------
+----------------
+*/
+
+#contact-section {
+    padding-bottom: 9rem;
+    position: relative;
+}
+
+#contact-section::before {
+    content: "";
+    z-index: -1;
+    opacity: 0.25;
+    position: absolute;
+    opacity: 0.6;
+    background-image:  radial-gradient(var(--white-shade-1) 0.75px, transparent 0.75px), radial-gradient(var(--white-shade-1) 0.75px, rgba(229,229,247,0) 0.75px);
+    background-size: 30px 30px;
+    background-position: 0 0,45px 45px;
+    inset: 0;
+}
+
+#contact-section .section-header {
+    padding-bottom: 0;
+}
+
+@media screen and (min-width: 650px) {
+    /* SKILL */
+
+    #skill-section .skill-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    #skill-section .grid-item {
+        flex-direction: column-reverse;
+        justify-content: left;
+        gap: 1.5rem;
+    }
+
+    #skill-section .skill {
+        display: block;
+        height: 8rem;
+        width: unset;
+    }
+
+    /* VALUE */
+
+    #value-section .value-container {
+        grid-template-columns: 1fr;
+    }
+
+    #value-section .grid-item {
+        padding: 3rem;
+    }
+
+    /* TEAM */
+
+    #team-section .section-header h2 {
+        text-align: center;
+    }
+
+    #team-section .info-container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    #team-section .grid-item {
+        height: 12.5rem;
+        max-width: 32rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    #hero-section {
+        justify-content: center;
+    }
+
+    #hero-section .main-container {
+        position: unset;
+    }
+
+    /* SKILL */
+
+    #skill-section .skill-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #skill-section .grid-item {
+        flex-direction: column-reverse;
+        justify-content: start;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    #skill-section .index {
+        font-size: 1.3rem;
+    }
+
+    #skill-section .skill {
+        height: 10rem;
+    }
+
+    /* VALUE */
+
+    #value-section .value-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #value-section .grid-item {
+        gap: 1rem;
+        padding: 3rem;
+    }
+
+    /* TEAM */
+
+    #team-section .team-container {
+        grid-template-columns: 1fr;
+    }
+
+    #team-section .grid-item {
+        height: 16rem;
+        max-width: 40rem;
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+    #skill-section .skill-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

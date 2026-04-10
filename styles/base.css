@@ -1,0 +1,171 @@
+/*
+----------------
+----------------
+Général
+----------------
+----------------
+*/
+
+:root {
+    --text-h1: 2.5rem;
+    --text-h2: 2rem;
+    --text-h3: 1.15rem;
+    --text-p:  1rem;
+
+    --black: #0a0a0a;
+    --black-shade-1: #343434;
+    --black-shade-2: #454545;
+    --black-shade-3: #5B5B5B;   
+
+    --white: #f5f5f5;
+    --white-shade-1: #BEBEBE;
+    --white-shade-2: #ABABAB;
+    --white-shade-3: #7D7D7D;    
+
+    --color-bati: #D3A782;
+    
+    --font: "Plus Jakarta Sans", sans-serif;
+
+    --header-height: 72px;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--white);
+    color: var(--black);
+}
+
+
+ul, a {
+    background-color: unset;
+    color: unset;
+    text-decoration: none;
+    border: none;
+    list-style: none;
+}
+
+h1 {
+    font-size: var(--text-h1);
+    font-weight: 800;
+}
+
+h2 {
+    font-size: var(--text-h2);
+    font-weight: 600;
+}
+
+h3 {
+    font-size: var(--text-h3);
+    font-weight: 600;
+}
+
+p, span, a {
+    font-size: var(--text-p);
+}
+
+span.material-icons {
+    font-size: var(--text-h3);
+}
+
+section {
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container p {
+    max-width: 800px;
+}
+
+
+@media screen and (min-width: 650px) {
+
+    h1 {
+        font-size: 3.15rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3, span.icon-value {
+        font-size: 1.45rem;
+    }
+
+    p, span {
+        font-size: 1.25rem;
+    }
+
+    section {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+
+    .section-header {
+        padding-bottom: 2rem ;
+    }
+    
+}
+
+@media screen and (min-width: 1000px) {
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3, span.icon-value {
+        font-size: 2rem;
+    }
+
+    p, span {
+        font-size: 1.3rem;
+    }
+
+    .main-container {
+        width: 100%;
+        max-width: 80rem;
+    }
+
+    section {
+        padding: 7rem 100px;
+        align-items: center;
+    }
+
+    .section-header {
+        padding-bottom: 4rem ;
+    }
+
+
+    .section-description {
+        width: 700px;
+        font-size: 1.6rem;
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+
+    section {
+        padding-top: 9rem;
+        padding-bottom: 9rem;
+
+    }  
+
+    .section-header {
+        padding-bottom: 6rem ;
+    }
+}

@@ -1,0 +1,43 @@
+/*
+----------------
+----------------
+FOOTER
+----------------
+----------------
+*/
+
+footer {
+    background-color: var(--black);
+    padding: 1.5rem;
+}
+
+div.footer {
+    width: 100%;
+    max-width: 80rem;
+    justify-self: center;
+}
+
+footer .footer-container {
+    display: flex;
+    align-items: center;
+    color: var(--white);
+}
+
+footer .footer-logo {
+    height: 3.7rem;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+
+    footer .footer-container {
+        width: 100%;
+        max-width: 80rem;
+    }
+
+    footer {
+        padding: 3rem 100px;
+    }
+}
+

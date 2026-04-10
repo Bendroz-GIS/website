@@ -1,0 +1,50 @@
+/*
+----------------
+----------------
+BUTTON
+----------------
+----------------
+*/
+
+a.button {
+    display: block;
+    width: fit-content;
+    margin-top: 2rem;
+    padding: 0;
+
+    display: block;
+    width: fit-content;
+    padding: 0.8rem 1.4rem;
+    border: 3px solid;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a.button.contact {
+    color: var(--white);
+    background-color: var(--black);
+    border: 3px solid var(--black);
+
+    
+}
+
+a.button.contact:hover {
+    background-color: var(--white);
+    color: var(--black);   
+}
+
+
+@media screen and (min-width: 650px) {
+
+    a.button {
+        font-size: 1.25rem;
+    }
+    
+}
+
+@media screen and (min-width: 1000px) {
+
+    a.button {
+        font-size: 1.3rem;
+    }
+
+}
